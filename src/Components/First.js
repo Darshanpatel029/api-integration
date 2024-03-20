@@ -10,9 +10,34 @@ const First = () => {
         );
     }, []);
     return (
-        <div>
+        <div className="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">UserId</th>
+                        <th scope="col">Todos</th>
 
-            {users.map(user => <div key={user.id}>{user.title}</div>)}
+                    </tr>
+
+                </thead>
+
+
+
+                {users.map(user => <div className="container">
+                    <table className="table">
+                        <tbody>
+                            <tr>
+                                <td >{user.userId}</td>
+                                <td>{user.title}</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>)}
+            </table>
+
+
+
         </div>
     )
 
